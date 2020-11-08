@@ -3,6 +3,8 @@
 public class script_launcher : MonoBehaviour
 {
     public GameObject line;
+    public float LINE_MAX_LENGTH = 3f;
+    float power = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +37,19 @@ public class script_launcher : MonoBehaviour
     {
         var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = transform.position.z;
-        
-        line.GetComponent<LineRenderer>().SetPosition(1, mousePos);
+        var lineLength = Mathf.Sqrt(mousePos.x * mousePos.x + mousePos.y * mousePos.y);
+        if (lineLength < LINE_MAX_LENGTH)
+        {
+            line.GetComponent<LineRenderer>().SetPosition(1, mousePos);
+            power = lineLength / LINE_MAX_LENGTH;
+        }
+        else
+        {
+            var endPos = mousePos / lineLength * LINE_MAX_LENGTH;
+            endPos.z = mousePos.z;
+            line.GetComponent<LineRenderer>().SetPosition(1, endPos);
+            power = 1f;
+        }
     }
 
 }
