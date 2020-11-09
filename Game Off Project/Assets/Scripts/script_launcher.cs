@@ -3,7 +3,9 @@
 public class script_launcher : MonoBehaviour
 {
     public GameObject line;
+    public GameObject projectile;
     public float LINE_MAX_LENGTH = 3f;
+    public float MAX_POWER = 10f;
     float power = 0f;
 
     // Start is called before the first frame update
