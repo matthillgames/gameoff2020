@@ -457,7 +457,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 625149308}
+  projectile: {fileID: 7058818477263850803, guid: 1bea599cde0b516408efd33076b3f1cc,
+    type: 3}
   LINE_MAX_LENGTH: 3
+  MAX_POWER: 10
 --- !u!135 &1601612876
 SphereCollider:
   m_ObjectHideFlags: 0
