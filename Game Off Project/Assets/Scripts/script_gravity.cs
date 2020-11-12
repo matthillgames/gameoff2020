@@ -3,25 +3,15 @@
 public class script_gravity : MonoBehaviour
 {
     public float GRAVITY = 5000f;
-    public float DAMPING_FORCE = 500f;
+    public float DAMPING_FORCE = 500f; //Does nothing yet
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerStay(Collider other) //Runs when moon is within gravity field
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
+        //Apply gravity to moon
         other.transform.LookAt(transform.position);
         other.attachedRigidbody.AddForce(other.transform.forward * GRAVITY * Time.deltaTime / Mathf.Pow(Vector3.Distance(other.transform.position, transform.position),2f), ForceMode.Force);
 
+        //Dampen velocity away from planet
         var localvel = other.transform.InverseTransformDirection(other.attachedRigidbody.velocity);
         if (localvel.z < 0)
         {
