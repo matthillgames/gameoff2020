@@ -10,7 +10,6 @@ public class script_launcher : MonoBehaviour
     float power = 0f;
     float timer = 0f;
 
-
     // Update is called once per frame
     void Update()
     {
@@ -49,18 +48,19 @@ public class script_launcher : MonoBehaviour
         line.SetActive(false);
 
         //Create a Moon Object and give it a force in the direction of the mouse
-        var p = Instantiate(projectile);
+        var p = Instantiate(projectile, transform.TransformPoint(0,0,0),Quaternion.Euler(0,0,0));
         var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = transform.position.z;
         p.transform.LookAt(mousePos);
-        p.GetComponent<Rigidbody>().AddForce(p.transform.forward * MAX_POWER * power,ForceMode.Impulse);
+        p.GetComponent<Rigidbody>().AddForce(-p.transform.forward * MAX_POWER * power,ForceMode.Impulse);
         Debug.Log(MAX_POWER * power * Time.deltaTime);
     }
 
     void drawLine() //Draws a line from this object to the mouse pointer, obeying max length
     {
-        var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        var mousePos = transform.InverseTransformPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         mousePos.z = transform.position.z;
+        mousePos = -mousePos;
         var lineLength = Mathf.Sqrt(mousePos.x * mousePos.x + mousePos.y * mousePos.y);
         if (lineLength < LINE_MAX_LENGTH)
         {
