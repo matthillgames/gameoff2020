@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2182230496248740072}
   - component: {fileID: 978016487885411968}
   - component: {fileID: -4157823454412807819}
+  - component: {fileID: 5132790252861873772}
   m_Layer: 0
   m_Name: Moon
-  m_TagString: Untagged
+  m_TagString: Moon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,3 +111,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
+--- !u!114 &5132790252861873772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058818477263850803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c120ebb8c39cf049b6fc4ef9055c4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
