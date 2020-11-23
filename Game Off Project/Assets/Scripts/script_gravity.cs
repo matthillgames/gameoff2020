@@ -1,12 +1,45 @@
 ﻿using UnityEngine;
+using TMPro;
 
 public class script_gravity : MonoBehaviour
 {
     public float GRAVITY = 5000f;
     public float DAMPING_FORCE = 500f; //Does nothing yet
+    public float TIMER = 3f;
+    public int count = 0;
+    public int requiredCount = 1;
+    public bool complete = false;
+    public int icount = 0;
+    public int lcount = 0;
+    public float timer = 3f;
+    public TextMeshPro mtext;
+
+
+    private void FixedUpdate()
+    {
+        if (lcount == icount)
+            timer -= Time.deltaTime;
+        else
+            timer = TIMER;
+
+        if (timer <= 0)
+            count = icount;
+
+        if (count == requiredCount)
+            complete = true;
+        else
+            complete = false;
+
+        lcount = icount;
+        icount = 0;
+
+        mtext.text = (requiredCount - count).ToString();
+    }
 
     private void OnTriggerStay(Collider other) //Runs when moon is within gravity field
     {
+        icount++;
+
         //Apply gravity to moon
         other.transform.LookAt(transform.position);
         other.attachedRigidbody.AddForce(other.transform.forward * GRAVITY * Time.deltaTime / Mathf.Pow(Vector3.Distance(other.transform.position, transform.position),2f), ForceMode.Force);
