@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 978016487885411968}
   - component: {fileID: -4157823454412807819}
   - component: {fileID: 5132790252861873772}
+  - component: {fileID: 4372578190785426288}
+  - component: {fileID: 6259017830216785236}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Moon
@@ -61,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5477ab675a0964046ab9b59b21b11529, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,3 +125,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c120ebb8c39cf049b6fc4ef9055c4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4372578190785426288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058818477263850803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f9ead185004a8e4c87d9e7b87b05ee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 0.3, y: 0}
+--- !u!122 &6259017830216785236
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7058818477263850803}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_Size: 0.64

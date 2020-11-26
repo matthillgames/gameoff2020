@@ -33,7 +33,10 @@ public class script_gravity : MonoBehaviour
         lcount = icount;
         icount = 0;
 
-        mtext.text = (requiredCount - count).ToString();
+        if (requiredCount - count > 0)
+            mtext.text = (requiredCount - count).ToString();
+        else
+            mtext.text = "0";
     }
 
     private void OnTriggerStay(Collider other) //Runs when moon is within gravity field
