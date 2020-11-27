@@ -14,6 +14,7 @@ public class script_inLevelMenu : MonoBehaviour
     public GameObject next_level_button;
 
     int level_complete = 0;
+    public AudioSource sound;
 
     private void Update()
     {
@@ -38,26 +39,30 @@ public class script_inLevelMenu : MonoBehaviour
     public void openButton()
     {
         pauseScreen.SetActive(true);
-
+        sound.Play();
     }
 
     public void closeButton()
     {
         pauseScreen.SetActive(false);
+        sound.Play();
     }
 
     public void mainMenuButton()
     {
         transition.changeLevel(0);
+        sound.Play();
     }
 
     public void resetButton()
     {
         transition.changeLevel(SceneManager.GetActiveScene().buildIndex);
+        sound.Play();
     }
 
     public void nextLevelButton()
     {
         transition.changeLevel(SceneManager.GetActiveScene().buildIndex + 1);
+        sound.Play();
     }
 }
