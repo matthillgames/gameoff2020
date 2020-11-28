@@ -601,6 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db072f1af6f1f34eb9eecd060ae40a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
   transition: {fileID: 2064129867}
 --- !u!1001 &1107043325
 PrefabInstance:
