@@ -9,7 +9,8 @@ public class script_moon : MonoBehaviour
     {
         if (collision.gameObject.tag == "Planet" || collision.gameObject.tag == "Moon")
         {
-            Instantiate(sound);
+            if (sound != null)
+                Instantiate(sound);
             Destroy(gameObject);
         }
 
