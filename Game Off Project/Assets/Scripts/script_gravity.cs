@@ -25,7 +25,7 @@ public class script_gravity : MonoBehaviour
         if (timer <= 0)
             count = icount;
 
-        if (count == requiredCount)
+        if (count >= requiredCount)
             complete = true;
         else
             complete = false;

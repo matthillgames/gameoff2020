@@ -11,4 +11,9 @@ public class script_credits : MonoBehaviour
         transition.changeLevel(0);
         sound.Play();
     }
+    public void levelSelectButton(int i)
+    {
+        transition.changeLevel(i);
+        sound.Play();
+    }
 }

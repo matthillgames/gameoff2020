@@ -16,6 +16,10 @@ public class script_inLevelMenu : MonoBehaviour
     int level_complete = 0;
     public AudioSource sound;
 
+    private void Start()
+    {
+        level_complete = 0;
+    }
     private void Update()
     {
         foreach (script_gravity planet in planets)

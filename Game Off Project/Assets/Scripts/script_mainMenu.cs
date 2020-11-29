@@ -15,5 +15,14 @@ public class script_mainMenu : MonoBehaviour
         transition.changeLevel(SceneManager.GetActiveScene().buildIndex + 1);
         sound.Play();
     }
-
+    public void CreditsButton()
+    {
+        transition.changeLevel(6);
+        sound.Play();
+    }
+    public void LevelSelectButton()
+    {
+        transition.changeLevel(7);
+        sound.Play();
+    }
 }
