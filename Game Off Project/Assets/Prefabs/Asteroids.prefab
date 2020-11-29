@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f16e6dc06267244419fe8c180d90917a, type: 2}
+  - {fileID: 2100000, guid: 3e4165a0acc32e2499b07e6cc6d99da9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118,8 +118,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &1573646205997993348
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,8 +238,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &2849030942158888947
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,8 +400,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &3183236834093351245
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +463,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f16e6dc06267244419fe8c180d90917a, type: 2}
+  - {fileID: 2100000, guid: 5286e471be7abf542840bffe8e1aae6c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -520,8 +520,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &3754825344017531113
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,8 +640,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &3768163941576028638
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,7 +703,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f16e6dc06267244419fe8c180d90917a, type: 2}
+  - {fileID: 2100000, guid: 5286e471be7abf542840bffe8e1aae6c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -760,8 +760,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &3876985950818926334
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +823,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f16e6dc06267244419fe8c180d90917a, type: 2}
+  - {fileID: 2100000, guid: 5286e471be7abf542840bffe8e1aae6c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -880,8 +880,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &3937514070333724674
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +943,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f16e6dc06267244419fe8c180d90917a, type: 2}
+  - {fileID: 2100000, guid: 3e4165a0acc32e2499b07e6cc6d99da9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1000,8 +1000,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &4191766294813735403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,7 +1063,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f16e6dc06267244419fe8c180d90917a, type: 2}
+  - {fileID: 2100000, guid: 3e4165a0acc32e2499b07e6cc6d99da9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1120,8 +1120,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &5078657384347263559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,7 +1183,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f16e6dc06267244419fe8c180d90917a, type: 2}
+  - {fileID: 2100000, guid: 5286e471be7abf542840bffe8e1aae6c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1240,8 +1240,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &5261632353952833824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,7 +1303,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f16e6dc06267244419fe8c180d90917a, type: 2}
+  - {fileID: 2100000, guid: 3e4165a0acc32e2499b07e6cc6d99da9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1360,8 +1360,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74
 --- !u!1 &6124518191732001111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,5 +1480,5 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 4285164138
-  m_Size: 0.8
+    rgba: 4294967295
+  m_Size: 0.74

@@ -4,7 +4,7 @@ using TMPro;
 public class script_gravity : MonoBehaviour
 {
     public float GRAVITY = 5000f;
-    public float DAMPING_FORCE = 500f; //Does nothing yet
+    public float DAMPING_MULTIPLYER = 1f; //Does nothing yet
     public float TIMER = 3f;
     public int count = 0;
     public int requiredCount = 1;
@@ -25,7 +25,7 @@ public class script_gravity : MonoBehaviour
         if (timer <= 0)
             count = icount;
 
-        if (count == requiredCount)
+        if (count >= requiredCount)
             complete = true;
         else
             complete = false;
@@ -45,13 +45,14 @@ public class script_gravity : MonoBehaviour
 
         //Apply gravity to moon
         other.transform.LookAt(transform.position);
-        other.attachedRigidbody.AddForce(other.transform.forward * GRAVITY * Time.deltaTime / Mathf.Pow(Vector3.Distance(other.transform.position, transform.position),2f), ForceMode.Force);
+        var gForce = other.transform.forward * GRAVITY * Time.deltaTime / Mathf.Pow(Vector3.Distance(other.transform.position, transform.position), 2f);
+        other.attachedRigidbody.AddForce(gForce, ForceMode.Force);
 
         //Dampen velocity away from planet
         var localvel = other.transform.InverseTransformDirection(other.attachedRigidbody.velocity);
         if (localvel.z < 0)
         {
-            localvel.z *= .98f;
+            localvel.z *= DAMPING_MULTIPLYER;
             other.attachedRigidbody.velocity = other.transform.TransformDirection(localvel);
         }
     }

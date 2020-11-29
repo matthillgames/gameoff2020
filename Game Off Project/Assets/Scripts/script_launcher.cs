@@ -9,6 +9,7 @@ public class script_launcher : MonoBehaviour
     float COOLDOWN = 0.3f;
     float power = 0f;
     float timer = 0f;
+    public AudioSource sound;
 
     // Update is called once per frame
     void Update()
@@ -55,6 +56,8 @@ public class script_launcher : MonoBehaviour
     {
         Debug.Log("UnClick");
         line.SetActive(false);
+
+        sound.Play();
 
         moon.transform.position = transform.position;
         moon.gameObject.SetActive(false);

@@ -107,11 +107,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8b29afff6d67d74580cab220b2a0d6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GRAVITY: 30000
-  DAMPING_FORCE: 500
-  TIMER: 5
+  GRAVITY: 90000
+  DAMPING_MULTIPLYER: 0.99
+  TIMER: 6
   count: 0
-  requiredCount: 1
+  requiredCount: 2
   complete: 0
   icount: 0
   lcount: 0

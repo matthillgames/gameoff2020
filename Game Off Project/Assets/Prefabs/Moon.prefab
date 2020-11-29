@@ -125,6 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c120ebb8c39cf049b6fc4ef9055c4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 4637070062750832574, guid: 2ca0cde8090598d4b832e8822c6ccaf2, type: 3}
+  part: {fileID: 8149709975019751356, guid: f15cdc0cf7c108a408765bf82e9dedc8, type: 3}
 --- !u!114 &4372578190785426288
 MonoBehaviour:
   m_ObjectHideFlags: 0
